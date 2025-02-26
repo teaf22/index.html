@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#fff5e4, #ffc4c4, #ee6983, #850e35 );
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+
+}
+
+.main-content{
+    padding: 10px;
+    height: 300px;
+    width: 350px;
+    text-align: center;
+    align-content: center;
+    margin: 10px 455px;
+    margin-top: 8px ;
+    background-color: #f4e1e4;
+    border-radius: 30px;
+    box-shadow: 0 25px 31px rgba(0, 0, 0, 0.5);
+
+}
+
+.text-area{
+    padding: 20px;
+    font-size: 25px ;
+    color: #850e35;
+   font-weight: bold;
+}
+
+.g{
+    padding: 50px;
+    font-family: "Edu VIC WA NT Beginner", serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+.ml{
+    padding-top: 20px;
+    font-family: "Edu VIC WA NT Beginner", serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+.header{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2{
+    color: rgb(61, 8, 30);
+    margin: 100px;
+    font-family: "Chewy", serif;
+    font-style: normal;
+    font-weight: 400px;
+    
+}
+
+
+
+#Hott {
+    cursor: pointer;
+    border: solid 4px #850e35;
+    border-top: none;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 4px 10px #850e3663, 0px 10px 40px -10px #850e36a7,
+      0px 12px 45px -15px #850e366f;
+    transition: all 0.3s ease;
+  }
+  .inner {
+    padding: 2px 5px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: solid 3px #ee6983;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #850e35, #ee6983);
+    color: #fff;
+    text-shadow: 1px 1px #850e35, 0 0 9px #fff;
+  }
+  .svgs {
+    position: relative;
+    margin-top: 9px;
+    z-index: 10;
+  }
+  .svgs > * {
+    filter: drop-shadow(0 0 6px #fff) drop-shadow(1px 1px 0px #850e35);
+  }
+  .svgs .svg-s {
+    position: absolute;
+    font-size: 0.7rem;
+    left: 20px;
+    top: -4px;
+  }
+  .button:active {
+    box-shadow: none;
+  }
+
+  /*Desktop*/
+@media (max-width: 1440px){
+    body{
+        background-size: 100% auto;
+      }
+}
+
+/*Taplet*/
+@media (max-width: 1024px){
+    .container {
+        background-size: 300% 300%;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .main-content {
+        width: 80%;
+        max-width: 350px;
+        margin: auto;
+    }
+}
+
+/*phones*/
+@media (max-width: 600px){
+    .container {
+        background-size: cover; /* التأكد من تغطية الخلفية بشكل كامل */
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 100vh; /* التأكد من تغطية الشاشة بالكامل */
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        animation: color 12s ease-in-out infinite;
+    }
+    }
+    .main-content {
+        width: 90%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    @media (max-width: 437px) {
+    .container {
+        min-height: 100vh; /* يجعل الخلفية تمتد على كامل الشاشة */
+        width: 100vw;
+        background-size: cover; /* يضمن تغطية الخلفية بدون فراغات */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+  
+  

@@ -1,0 +1,134 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Cimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.container{
+    width: 550px;
+    height: 450px;
+}
+
+.box{
+    align-items: center;
+    margin-top: 15rem;
+    margin-left: 10%;
+    
+}
+.Text{
+    text-align: center;
+    padding: 15px;
+
+    font-family: "Chewy", serif;
+  font-weight: 400;
+  font-style: normal;
+
+    color: #ff0062;
+    text-shadow: 4px 0px 2px #ffffff;
+}
+
+
+
+.buttonn{
+
+    text-align: center;
+   place-items: center;
+   margin-top: 15px;
+   
+   
+}
+
+.Hot{
+    margin-right: 50px;
+    font-family: "Chewy", serif;
+  font-weight: 400;
+  font-style: normal;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 17px;
+    border-color: #ff1493;
+    color: #ff1493;
+    background-color: #f09bc886;
+
+    
+}
+
+.Ice{
+    margin: 50px;
+    border-color: #1da19a;
+    font-family: "Chewy", serif;
+  font-weight: 400;
+  font-style: normal;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: #1da19a;
+    background-color: #9ffffa51;
+    
+}
+
+
+
+/*Desktop*/
+@media (max-width: 1440px){
+    body{
+        background-size: 100% auto;
+      }
+}
+
+/*Taplet*/
+@media (max-width: 1024px){
+    body{
+        background-image: url("Cimg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+      }
+      .box{
+        margin-top: 100px;
+      }
+      
+}
+
+/*phones*/
+@media (max-width: 600px){
+  body{
+    background-image: url("Cimg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+  }
+  .buttonn{
+    
+    flex-direction: column;  /* تأكد من ترتيب الأزرار عموديًا حتى عند تصغير الشاشة */
+    align-items: center;  /* توسيط الأزرار */
+    justify-content: center;
+   
+  }
+
+  .buttonn button {
+    width: 100%; /* جعل الأزرار تتوسع عند تصغير الشاشة */
+    max-width: 150px;  /* حد أقصى للعرض لتجنب أن تكون كبيرة جدًا */
+    padding: 15px; /* زيادة الحشو عند تصغير الشاشة */
+}
+.Ice{
+    margin-right: 100px;
+}
+
+.Text{
+    margin-right: 50px;
+}
+}
